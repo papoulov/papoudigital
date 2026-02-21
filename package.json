@@ -1,0 +1,36 @@
+{
+  "name": "papoudigital",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "dev:turbo": "next dev --turbopack",
+    "dev:webpack": "next dev --webpack"
+  },
+  "dependencies": {
+    "@ramonak/react-progress-bar": "^5.4.0",
+    "framer-motion": "^12.23.26",
+    "next": "^16.1.6",
+    "react": "19.2.1",
+    "react-countdown": "^2.3.6",
+    "react-countup": "^6.5.3",
+    "react-dom": "19.2.1",
+    "react-fast-marquee": "^1.6.5",
+    "react-intersection-observer": "^10.0.0",
+    "swiper": "^12.0.3",
+    "yet-another-react-lightbox": "^3.27.0",
+    "firebase": "^11.10.0",
+    "firebase-admin": "^13.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^4.1.1",
+    "eslint-config-next": "^0.2.4",
+    "typescript": "^5"
+  }
+}

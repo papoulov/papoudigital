@@ -1,0 +1,311 @@
+/*--------------------------------------------------------------
+# Counter One
+--------------------------------------------------------------*/
+.counter-one {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-color: var(--finris-base);
+    padding: 34px 0 34px;
+    z-index: 1;
+}
+
+.counter-one__shape-1 {
+    position: absolute;
+    top: 0;
+    right: -30px;
+    bottom: 0;
+    width: 61.4%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.counter-one__section-title {
+    position: relative;
+    display: inline-block;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: var(--finris-white);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.counter-one__list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.counter-one__list li {
+    position: relative;
+    display: block;
+}
+
+.counter-one__list li:before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: -95px;
+    height: 7px;
+    width: 7px;
+    background-color: var(--finris-white);
+    border-radius: 50%;
+}
+
+.counter-one__list li:after {
+    content: "";
+    position: absolute;
+    bottom: 16px;
+    left: -95px;
+    height: 7px;
+    width: 7px;
+    background-color: var(--finris-white);
+    border-radius: 50%;
+}
+
+.counter-one__list li:first-child:before,
+.counter-one__list li:first-child:after {
+    display: none;
+}
+
+.counter-one__single {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.counter-one__single:before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    bottom: 16px;
+    left: -92px;
+    width: 1px;
+    background-color: var(--finris-white);
+}
+
+.counter-one__list li:first-child .counter-one__single:before {
+    display: none;
+}
+
+.counter-one__count {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.counter-one__count p {
+    font-size: 60px;
+    color: var(--finris-white);
+    line-height: 60px;
+    font-weight: 700;
+}
+
+.counter-one__count-plus {
+    font-size: 60px;
+    color: var(--finris-white);
+    line-height: 60px;
+    font-weight: 700;
+}
+
+.counter-one__text {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--finris-white);
+}
+
+.counter-one__project {
+    display: block;
+    min-width: 180px;
+}
+
+.counter-one__project-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.counter-one__project-name {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+    font-family: var(--finris-font);
+    letter-spacing: 0.08em;
+    color: var(--finris-white);
+    text-transform: uppercase;
+}
+
+.counter-one__project-status {
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--finris-white);
+    text-transform: uppercase;
+}
+
+/*--------------------------------------------------------------
+# Projects Showcase (Home Two)
+--------------------------------------------------------------*/
+.projects-showcase {
+    position: relative;
+    display: block;
+    padding: 56px 0 44px;
+}
+
+.projects-showcase__header {
+    margin-bottom: 20px;
+}
+
+.projects-showcase__title {
+    font-size: 32px;
+    line-height: 1.1em;
+    font-weight: 700;
+    color: var(--finris-black);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.projects-showcase__subtitle {
+    max-width: 760px;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.6em;
+}
+
+.projects-showcase__scroller {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 8px;
+    scrollbar-width: thin;
+}
+
+.projects-showcase__track {
+    display: flex;
+    align-items: stretch;
+    gap: 18px;
+    width: max-content;
+}
+
+.projects-showcase__card {
+    flex: 0 0 460px;
+    background: linear-gradient(130deg, #5b45b3 0%, #7355cc 58%, #8f6ce0 100%);
+    border-radius: 24px;
+    overflow: hidden;
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 18px rgba(18, 25, 38, 0.10), 0 2px 6px rgba(18, 25, 38, 0.08);
+}
+
+.projects-showcase__card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.projects-showcase__identity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.projects-showcase__logo-wrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #e2ffea;
+    border: 1px solid #a9e3ad;
+}
+
+.projects-showcase__project-name {
+    margin: 0;
+    font-size: 23px;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    color: var(--finris-white);
+}
+
+.projects-showcase__status-badge {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 7px 12px;
+    background: rgba(255, 255, 255, 0.14);
+    color: var(--finris-white);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.projects-showcase__description {
+    color: rgba(255, 255, 255, 0.94);
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+.projects-showcase__meta {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.projects-showcase__meta span {
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 999px;
+    padding: 5px 11px;
+    color: var(--finris-white);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+@media only screen and (max-width: 767px) {
+    .projects-showcase {
+        padding: 42px 0 30px;
+    }
+
+    .projects-showcase__title {
+        font-size: 26px;
+    }
+
+    .projects-showcase__subtitle {
+        font-size: 15px;
+    }
+
+    .projects-showcase__project-name {
+        font-size: 20px;
+    }
+
+    .projects-showcase__card {
+        flex-basis: min(90vw, 340px);
+    }
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/
