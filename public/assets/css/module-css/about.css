@@ -642,7 +642,15 @@
 
 .about-three__img img {
     width: 100%;
+    height: auto;
+    object-fit: contain;
     border-radius: 40px;
+}
+
+.about-three__img-main {
+    display: block;
+    width: 100%;
+    height: auto !important;
 }
 
 .about-three__img-2 {
@@ -706,11 +714,11 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--finris-white);
     background-color: rgba(255, 56, 56, .60);
     border-radius: 50%;
@@ -725,10 +733,10 @@
 .about-three__video-icon:before {
     content: "";
     position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
     background-color: rgba(255, 56, 56, .60);
     border-radius: 50%;
     z-index: -1;
@@ -737,10 +745,10 @@
 .about-three__video-icon:after {
     content: "";
     position: absolute;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
+    top: -16px;
+    left: -16px;
+    right: -16px;
+    bottom: -16px;
     background-color: rgba(255, 56, 56, .60);
     border-radius: 50%;
     z-index: -1;
@@ -752,8 +760,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100px;
-    height: 100px;
+    width: 88px;
+    height: 88px;
     border-radius: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -970,6 +978,12 @@
     .about-statement__text {
         line-height: 1.5;
     }
+
+    .about-three__video-link {
+        top: auto;
+        right: 18px;
+        bottom: 18px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -980,6 +994,18 @@
     .about-statement__text {
         font-size: 18px;
         line-height: 1.55;
+    }
+
+    .about-three__video-link {
+        right: 12px;
+        bottom: 12px;
+    }
+
+    .about-three__img img,
+    .about-three__img-main {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
     }
 }
 

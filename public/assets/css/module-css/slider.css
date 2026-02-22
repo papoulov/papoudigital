@@ -685,7 +685,9 @@
 }
 
 .main-slider__img img {
-    width: auto !important;
+    max-width: none !important;
+    width: clamp(630px, 40vw, 860px) !important;
+    height: auto !important;
 }
 
 .main-slider__img-shape-box {

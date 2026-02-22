@@ -43,7 +43,7 @@ const StrickyHeaderCommon: React.FC = () => {
                             </div>
                         </div>
                         <div className="main-menu-two__main-menu-box">
-                            <a href="#" className="mobile-nav__toggler" onClick={() => setIsMobile((pre) => !pre)}><i className="fa fa-bars"></i></a>
+                            <a href="#" className="mobile-nav__toggler" onClick={(e) => { e.preventDefault(); setIsMobile(true); }}><i className="fa fa-bars"></i></a>
                             <ManuList />
                         </div>
                         <div className="main-menu-two__right">

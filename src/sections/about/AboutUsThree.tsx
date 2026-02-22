@@ -31,7 +31,14 @@ const AboutUsThree: React.FC = () => {
                         <div className="about-three__left" >
                             <div className="about-three__img-box">
                                 <div className="about-three__img">
-                                    <Image src={aboutMainImage} width={445} height={480} alt="About PapouDigital" />
+                                    <Image
+                                        src={aboutMainImage}
+                                        width={445}
+                                        height={480}
+                                        alt="About PapouDigital"
+                                        className="about-three__img-main"
+                                        style={{ width: "100%", height: "auto" }}
+                                    />
                                 </div>
                                 <div className="about-three__img-2">
                                     <Image src={aboutSecondaryImage} width={280} height={306} alt="PapouDigital team" />

@@ -64,7 +64,7 @@ const HeaderThree: React.FC = () => {
                             </div>
                         </div>
                         <div className="main-menu-two__main-menu-box">
-                            <Link href="#" className="mobile-nav__toggler" onClick={() => setIsMobile((pre) => !pre)}><i className="fa fa-bars"></i></Link>
+                            <Link href="#" className="mobile-nav__toggler" onClick={(e) => { e.preventDefault(); setIsMobile(true); }}><i className="fa fa-bars"></i></Link>
                             <ManuListOnePage />
                         </div>
                         <div className="main-menu-two__right">
